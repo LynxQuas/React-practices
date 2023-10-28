@@ -1,0 +1,49 @@
+.registration_result {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: 30rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6rem;
+
+    padding: 4rem;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nameContainer {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.back {
+    font-size: 2rem;
+    background-color: var(--add-btn-bg-color);
+    padding: 1rem;
+    width: 50%;
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--delete-btn-bg-color);
+}
+
+@media only screen and (max-width: 600px) {
+    .registration_result {
+        width: 90%;
+
+        align-self: center;
+    }
+
+    .back {
+        font-size: 1.5rem;
+    }
+}

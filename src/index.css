@@ -1,0 +1,29 @@
+:root {
+    --nav-btn-bg-color: #085580;
+    --nav-text-color: #c2c2c2;
+    --nav-text-color-selected: #fff;
+
+    --add-btn-bg-color: #20f0a5;
+
+    --delete-btn-bg-color: #f47357;
+
+    --task-bg-color: #d9d9d9;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}

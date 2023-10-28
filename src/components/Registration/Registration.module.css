@@ -1,0 +1,110 @@
+.registration_form {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6rem;
+    border: 1px solid black;
+    padding: 4rem;
+
+    background-color: var(--nav-btn-bg-color);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    animation: moveInTop 0.5s;
+}
+
+.nameInputs {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.nameInputs input {
+    width: 80%;
+    font-size: inherit;
+}
+
+.registration_form input {
+    height: 3rem;
+    border: none;
+    outline: none;
+    background-color: azure;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    font-weight: 500;
+    font-size: inherit;
+}
+
+.registration_form > input:focus {
+    border-bottom: 3px solid #20f0a5;
+}
+
+.registration_form button {
+    border-radius: 5px;
+    background-color: #20f0a5;
+    border: none;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    width: 50%;
+    align-self: center;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    align-self: self-end;
+
+    padding: 0;
+}
+
+.color {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color label {
+    cursor: pointer;
+    color: #c1c1c1;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(200);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .registration_form {
+        width: 90%;
+        margin-top: 2rem;
+        gap: 2.5rem;
+        animation: none;
+    }
+
+    .nameInputs {
+        flex-direction: column;
+    }
+
+    .nameInputs > input {
+        width: 100%;
+    }
+}
