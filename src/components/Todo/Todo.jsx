@@ -81,7 +81,11 @@ export default function Todo() {
                 />
             ) : (
                 <h3 style={{ color: "#085580", textAlign: "center" }}>
-                    Your list is empty. Time to add a todo!
+                    <TodoList
+                        todos={todos}
+                        onDelete={deleteTaskHandler}
+                        onComplete={taskCompleteHandler}
+                    />
                 </h3>
             )}
         </section>

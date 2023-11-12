@@ -11,6 +11,7 @@ const PhoneNumberInput = ({ onChange }) => {
         <div>
             <PhoneInput
                 placeholder="Enter phone number"
+                defaultCountry="MM"
                 onChange={handlePhoneChange}
                 requried="true"
             />
