@@ -80,13 +80,11 @@ export default function Todo() {
                     onComplete={taskCompleteHandler}
                 />
             ) : (
-                <h3 style={{ color: "#085580", textAlign: "center" }}>
-                    <TodoList
-                        todos={todos}
-                        onDelete={deleteTaskHandler}
-                        onComplete={taskCompleteHandler}
-                    />
-                </h3>
+                <TodoList
+                    todos={todos}
+                    onDelete={deleteTaskHandler}
+                    onComplete={taskCompleteHandler}
+                />
             )}
         </section>
     );
